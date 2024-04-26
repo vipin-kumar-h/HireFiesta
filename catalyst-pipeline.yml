@@ -2,7 +2,7 @@ version: 1
 jobs:
   catalystdeploy:
     steps:
-      - catalyst deploy --verbose
+      - catalyst deploy --only functions
 stages:
   - name: deploy
     jobs:
