@@ -1,0 +1,13 @@
+version: 1.0
+jobs:
+  catalyst-deploy:
+    steps:
+        - catalyst deploy
+  catalyst-serve:
+    steps:
+        - catalyst serve
+stages:
+  - name: build
+    jobs:
+      - - catalyst-deploy
+        - catalyst-serve
