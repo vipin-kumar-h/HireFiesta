@@ -1,9 +1,0 @@
-version: 1
-jobs:
-  catalystdeploy:
-    steps:
-      - catalyst deploy --verbose
-stages:
-  - name: deploy
-    jobs:
-      - catalystdeploy
